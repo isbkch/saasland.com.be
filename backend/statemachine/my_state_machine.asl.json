@@ -10,7 +10,7 @@
         },
         "Get Repo Contents": {
             "Type": "Task",
-            "Resource":"${GetRepoContentsArn}",                 
+            "Resource":"${GetRepoContentsArn}",
             "Next": "forEachBlog",
             "ResultPath": "$.RepoBlogs"
         },
@@ -24,7 +24,7 @@
                 "BlogUrl.$": "$$.Map.Item.Value",
                 "RepoBlogs.$": "$.RepoBlogs"
             },
-           
+
             "MaxConcurrency": 0,
             "Iterator": {
               "StartAt": "getMeta",
@@ -39,7 +39,7 @@
                 "Compare Against Repo": {
                     "Type": "Task",
                     "Resource":"${CompareAgainstRepoArn}",
-                    "ResultPath" : "$.decision",                 
+                    "ResultPath" : "$.decision",
                     "Next": "Decide if Exist ?"
                 },
 
@@ -62,7 +62,7 @@
 
                 "Add To List": {
                     "Type": "Task",
-                    "Resource":"${AddToListArn}",                
+                    "Resource":"${AddToListArn}",
                     "End": true
                 },
 
@@ -77,9 +77,8 @@
 
         "SaveToGitHub": {
             "Type": "Task",
-            "Resource":"${WriteToGitHubArn}",                 
+            "Resource":"${WriteToGitHubArn}",
             "End": true
         }
     }
   }
-  

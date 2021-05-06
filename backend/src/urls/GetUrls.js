@@ -1,6 +1,6 @@
-/*  
+/*
 SPDX-FileCopyrightText: 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT-0 
+SPDX-License-Identifier: MIT-0
 */
 const axios = require('axios');
 var xml2js = require('xml2js');
@@ -31,5 +31,5 @@ const getBlog = async (url) => {
         console.error(error)
     }
     return blogs;
-          
+
 }

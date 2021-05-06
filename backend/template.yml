@@ -1,6 +1,6 @@
 
 # SPDX-FileCopyrightText: 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-# SPDX-License-Identifier: MIT-0 
+# SPDX-License-Identifier: MIT-0
 
 
 # This is the SAM template that represents the architecture of your serverless application
@@ -10,7 +10,7 @@
 # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/format-version-structure.html
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-  serverlessLandBlogUpdator
+  saasLandBlogUpdater
 
 # Transform section specifies one or more macros that AWS CloudFormation uses to process your template
 # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/transform-section-structure.html
@@ -102,7 +102,7 @@ Resources:
 
   # Each Lambda function is defined by properties:
   # https://github.com/awslabs/serverless-application-model/blob/master/versions/2016-10-31.md#awsserverlessfunction
-  
+
   #MyStateMachine:
   #  Properties:
   #  Type: AWS::Serverless::StateMachine
@@ -163,7 +163,7 @@ Resources:
       Timeout: 100
       Description: A Lambda function that Gets File Contents from Github and checks if payload item exists already.
       Role: !GetAtt SSMAccessRole.Arn
-      
+
   AddToList:
     Type: AWS::Serverless::Function
     Properties:
@@ -176,8 +176,8 @@ Resources:
       Policies:
         # Give Lambda basic execution Permission to the helloFromLambda
         - AWSLambdaBasicExecutionRole
-  
-  
+
+
   WriteToGitHub:
     Type: AWS::Serverless::Function
     Properties:

@@ -1,9 +1,8 @@
 {
-    "name": "replaced-by-user-input",
-    "description": "replaced-by-user-input",
+    "name": "saas-land",
+    "description": "saas-land",
     "version": "0.0.1",
     "private": true,
-    "dependencies": {},
     "devDependencies": {
         "jest": "^24.7.1"
     },
