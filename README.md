@@ -1,10 +1,9 @@
-# Building Serverless Land
+# Building SaaS Land
 
-[SaaS Land](https://saasland.com) brings together all the latest blogs, videos, and training for AWS Serverless.
+[SaaS Land](https://saasland.com) brings together all the latest blogs, videos, and training for SaaS on AWS.
 ![SaaSLand](/resources/slandpipeline.png)
 
-
-This ris SaaS Land repository. It is split into 2 components:
+This is SaaS Land repository. It is split into 2 components:
 Part 1: The front-end, an auto-building static website.
 Part 2: The backend, am automated content aggregation workflow.
 
