@@ -34,21 +34,19 @@ exports.handler = async (event) => {
             message: 'Updated content file',
             content: contentEncoded,
             committer: {
-                name: "Octokit Bot",
-                email: "Octokit@example.com",
+                name: "isbkch",
+                email: "isbkch@gmail.com",
             },
             author: {
-                name: "Octokit Bot",
-                email: "Octokit@example.com",
+                name: "iLyas Bakouch",
+                email: "isbkch@gmail.com",
             }
         });
     } catch (err) {
         console.error(err)
     }
     return { statusCode: 200, body: newBlogs };
-
 }
-
 
 const toCommit = function (arr, value) {
     let merged = []
