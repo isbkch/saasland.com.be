@@ -1,6 +1,6 @@
-/*  
-SPDX-FileCopyrightText: 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT-0 
+/*
+SPDX-FileCopyrightText: 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0
 */
 const { Octokit } = require("@octokit/rest")
 const { Base64 } = require("js-base64")
@@ -11,7 +11,7 @@ const SSM = new AWS.SSM();
 exports.handler = async (event)=>{
      let Filesha='';
      let jsonBlogs=''
-    
+
      //get Github API Key and Authenticate
     const singleParam = { Name: '/GitHubAPIKey ',WithDecryption: true };
     const GITHUB_ACCESS_TOKEN = await SSM.getParameter(singleParam).promise();

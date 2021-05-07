@@ -1,6 +1,6 @@
-/*  
-SPDX-FileCopyrightText: 2020 Amazon.com, Inc. or its affiliates. All Rights Reserved.
-SPDX-License-Identifier: MIT-0 
+/*
+SPDX-FileCopyrightText: 2021 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+SPDX-License-Identifier: MIT-0
 */
 const axios = require('axios');
 const cheerio = require('cheerio');
@@ -15,7 +15,7 @@ exports.handler = async (url)=>{
     return response;
 }
 
-//designed to scrape the AWS compute blog. 
+//designed to scrape the AWS compute blog.
 const getBlog = async (url) => {
   try {
     const response = await axios.get(url)
@@ -67,5 +67,5 @@ const getBlog = async (url) => {
     } catch (error) {
         console.error(error)
     }
-          
+
 }
