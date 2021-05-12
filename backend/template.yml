@@ -30,8 +30,8 @@ Parameters:
 
   JSONFile:
     Type: String
-    Description: JSON file that holds blog content eg. content.json
-    Default: '/frontend/content.json'
+    Description: JSON file that holds blog content eg. blog-content.json
+    Default: '/frontend/blog-content.json'
 
 # Resources declares the AWS resources that you want to include in the stack
 # https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resources-section-structure.html
