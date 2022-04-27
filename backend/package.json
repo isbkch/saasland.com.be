@@ -4,7 +4,7 @@
     "version": "0.0.1",
     "private": true,
     "devDependencies": {
-        "jest": "^27.0.6"
+        "jest": "^28.0.2"
     },
     "scripts": {
         "test": "jest"
